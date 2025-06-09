@@ -9,7 +9,7 @@ PROGRAMS=("zsh" "vim" "sl" "trash-cli" "fontconfig" "htop" "curl" "wget" "gh")
 #BREW_PROGRAMS=("git" "lazygit" "lazydocker" "ohmyzsh" "zsh-autosuggestions" "zsh-syntax-highlighting" "zsh-completions" "zsh-history-substring-search" "zsh-autocomplete" "zsh-syntax-highlighting" "zsh-history-substring-search" "zsh-autocomplete" "zsh-syntax-highlighting" "zsh-history-substring-search" "zsh-autocomplete")
 BREW_PROGRAMS=("koekeishiya/formulae/skhd" "koekeisha/formulae/yabai")
 INSTALL_NODE=true
-INSTALL_NEOVIM=true
+INSTALL_NEOVIM=false
 package_manager="brew"
 export TERM=${TERM:-xterm-256color}
 for var in "$@"
