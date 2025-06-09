@@ -18,8 +18,7 @@ detect_package_manager() {
     # Check if we're on macOS and install Homebrew by default
     if [[ "$OSTYPE" == "darwin"* ]]; then
       _process "Installing Homebrew on macOS..."
-      _process "Hello World"
-      #curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash >> "$LOG" 2>&1
+      curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash >> "$LOG" 2>&1
       if [ $? -eq 0 ]; then
         _success "Homebrew installed successfully"
         echo "brew"
