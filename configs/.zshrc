@@ -192,7 +192,7 @@ if [ -f ~/.zshrc-local ]; then
   source ~/.zshrc-local
 fi
 
-export PATH=$PATH:/home/bscholer/.spicetify
+export PATH=$PATH:/home/scottfisher/.spicetify
 
 export MANPAGER="vim -M +MANPAGER - "
 
