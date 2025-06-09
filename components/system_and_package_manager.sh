@@ -23,7 +23,7 @@ detect_package_manager() {
         _success "Homebrew installed successfully"
         echo "brew"
       else
-        _error "Failed to install Homebrew"
+        _warning "Failed to install Homebrew"
         return 1
       fi
     else
