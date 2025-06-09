@@ -144,9 +144,10 @@ download_and_source_scripts() {
 install() {
   _intro
 
+  package_manager=$(detect_package_manager)
+
   download_and_source_scripts
 
-  package_manager=$(detect_package_manager)
   install_programs
   install_lazygit
   install_lazydocker
