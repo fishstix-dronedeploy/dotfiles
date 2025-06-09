@@ -15,8 +15,23 @@ detect_package_manager() {
   elif command -v pkg &> /dev/null; then
     echo "pkg"
   else
-    _warning "No supported package manager found. Please install one and try again"
-    exit 1
+    _info "Homebrew not found. Would you like to install it? (y/n)"
+    read -r response
+    if [[ "$response" =~ ^[Yy]$ ]]; then
+      _process "Installing Homebrew..."
+      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" >> "$LOG" 2>&1
+      if [ $? -eq 0 ]; then
+        _success "Homebrew installed successfully"
+        echo "brew"
+      else
+        _error "Failed to install Homebrew"
+        return 1
+      fi
+    else
+      _warning "Homebrew installation declined"
+      _warning "No supported package manager found. Please install one and try again"
+      return 1
+    fi
   fi
 }
 
