@@ -196,3 +196,11 @@ export PATH=$PATH:/home/scottfisher/.spicetify
 
 export MANPAGER="vim -M +MANPAGER - "
 
+# DD Functions
+function dd_pipeline_prod() {
+  export PIPELINE_KEY=$PIPELINE_KEY_PROD
+}
+
+function dd_pipeline_test() {
+  export PIPELINE_KEY=$PIPELINE_KEY_TEST
+}
