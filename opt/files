@@ -1,6 +1,8 @@
 configs/.zshrc .zshrc
 configs/.p10k.zsh .p10k.zsh
 configs/.tmux.conf .tmux.conf
+configs/.skhdrc .skhdrc
+configs/.yabairc .yabairc
 configs/nvchad/chadrc.lua .config/nvim/lua/custom/chadrc.lua
 configs/nvchad/mappings.lua .config/nvim/lua/custom/mappings.lua
 configs/nvchad/misc.lua .config/nvim/lua/custom/misc.lua
