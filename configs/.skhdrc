@@ -1,11 +1,14 @@
-# open terminal
+# open new terminal
 cmd - return : open -n -a "Terminal"
 
-# open chrome 
+# open new chrome 
 cmd + shift - return : open -n -a "Google Chrome" 
 
-# open slack
+# open
 cmd + shift - s : open -a "Slack"
+cmd + shift - v : open -a "Cursor"
+cmd + shift - x : open -a "Xcode"
+cmd + shift - c : open -a "Google Chrome"
 
 # moves focus between windows in the current focused display
 alt - h : yabai -m window --focus west
