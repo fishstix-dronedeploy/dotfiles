@@ -101,8 +101,9 @@ install_programs() {
       ;;
     brew)
       _process "Installing dependencies using brew package manager"
+      git config --global url."ssh://git@github.com/".insteadOf "https://github.com/"
       brew install "${PROGRAMS[@]}" >> "$LOG" 2>&1
-      #brew install "${BREW_PROGRAMS[@]}" >> "$LOG" 2>&1
+      brew install "${BREW_PROGRAMS[@]}" >> "$LOG" 2>&1
       ;;
     pkg)
       _process "Installing dependencies using pkg package manager"
