@@ -80,7 +80,7 @@ install_programs() {
     exit 1
   fi
 
-  _process "Installing dependencies using $package_manager"
+  _process "Installing dependencies '${PROGRAMS[@]}' using $package_manager"
 
   case "$package_manager" in
     apt-get)
@@ -103,6 +103,7 @@ install_programs() {
       _process "Installing dependencies using brew package manager"
       git config --global url."ssh://git@github.com/".insteadOf "https://github.com/"
       brew install "${PROGRAMS[@]}" >> "$LOG" 2>&1
+      _process "Installing dependencies '${BREW_PROGRAMS[@]}' using $package_manager"
       brew install "${BREW_PROGRAMS[@]}" >> "$LOG" 2>&1
       ;;
     pkg)
