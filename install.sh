@@ -8,7 +8,7 @@ DIR="${HOME}/.dotfiles"
 PROGRAMS=("git" "zsh" "vim" "sl" "trash-cli" "fontconfig" "htop" "curl" "wget")
 INSTALL_NODE=true
 INSTALL_NEOVIM=true
-package_manager=""
+package_manager="brew"
 export TERM=${TERM:-xterm-256color}
 for var in "$@"
 do
