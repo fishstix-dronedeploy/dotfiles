@@ -13,7 +13,7 @@ Hey! I got tired of setting up my development environment from scratch on new ma
 ## 🚀 Just Run This
 
 ```bash
-wget --quiet -O - https://raw.github.com/fishstix-dronedeploy/dotfiles/master/install.sh | bash -s
+curl -sL https://raw.github.com/fishstix-dronedeploy/dotfiles/master/install.sh | bash -s
 ```
 
 ## ✨ What You Get
@@ -68,7 +68,7 @@ Stay up to date with:
 ```bash
 cd ~/.dotfiles && git pull
 ```
-
 ## 🙌 Credit Where It's Due
 
 This started as a fork of [gjunkie's dotfiles-starter-kit](https://github.com/gjunkie/dotfiles-starter-kit/blob/main/install), but I've added a bunch of stuff I use daily. Thanks for the inspiration!
+
