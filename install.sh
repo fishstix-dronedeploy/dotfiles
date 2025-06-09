@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 LOG="${HOME}/logs/dotfile-installer.log"
-GITHUB_USER="bscholer"
+GITHUB_USER="fishstix-dronedeploy"
 GITHUB_REPO="dotfiles"
-USER_GIT_AUTHOR_NAME="Ben Scholer"
-USER_GIT_AUTHOR_EMAIL="github@benscholer.com"
+USER_GIT_AUTHOR_NAME="Scott Fisher"
+USER_GIT_AUTHOR_EMAIL="scott.fisher@dronedeploy.com"
 DIR="${HOME}/.dotfiles"
 PROGRAMS=("git" "zsh" "vim" "sl" "trash-cli" "fontconfig" "htop" "curl" "wget")
 INSTALL_NODE=true
@@ -56,7 +56,7 @@ rainbow() {
 }
 
 _intro() {
-  rainbow "🐧 ******** bscholer terminal setup script ******** 🐧"
+  rainbow "🐧 ******** fishstix terminal setup script ******** 🐧"
   echo ""
 }
 
@@ -111,7 +111,7 @@ download_and_source_scripts() {
       source "${script_name}"
     done
   else
-    local script_base_url="https://api.github.com/repos/bscholer/dotfiles/contents/components"
+    local script_base_url="https://api.github.com/repos/fishstix-dronedeploy/dotfiles/contents/components"
 
     local python_command=$(command -v python || command -v python3)
 
@@ -129,7 +129,7 @@ download_and_source_scripts() {
     _process "Downloading and sourcing script files in temporary directory..."
     for script_name in ${installer_scripts}; do
       _process "  → Downloading and sourcing ${script_name}"
-      local raw_script_url="https://raw.githubusercontent.com/bscholer/dotfiles/master/components/${script_name}"
+      local raw_script_url="https://raw.githubusercontent.com/fishstix-dronedeploy/dotfiles/master/components/${script_name}"
       wget --quiet -O "${temp_dir}/${script_name}" "${raw_script_url}"
       source "${temp_dir}/${script_name}"
     done
