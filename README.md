@@ -13,7 +13,7 @@ Hey! I got tired of setting up my development environment from scratch on new ma
 ## 🚀 Just Run This
 
 ```bash
-wget --quiet -O - https://raw.github.com/bscholer/dotfiles/master/install.sh | bash -s
+wget --quiet -O - https://raw.github.com/fishstix-dronedeploy/dotfiles/master/install.sh | bash -s
 ```
 
 ## ✨ What You Get
