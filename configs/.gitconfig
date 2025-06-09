@@ -1,0 +1,31 @@
+[user]
+	email = scott.fisher@dronedeploy.com
+	name = Scott Fisher
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[alias]
+	# Basic shortcuts
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	visual = !gitk
+
+	# Advanced aliases
+	amend = commit --amend --no-edit
+	undo = reset --soft HEAD^
+	cleanup = "!git branch --merged | grep -v '\\*\\|master\\|main\\|develop' | xargs -n 1 git branch -d"
+	prune = remote prune origin
+	uncommit = reset --soft HEAD~1
+	diffstat = diff --stat
+	diffname = diff --name-only
+	diffnamecached = diff --cached --name-only
+	diffstaged = diff --cached
+	diffstagedstat = diff --cached --stat
+	diffstagedname = diff --cached --name-only
+	diffstagednamecached = diff --cached --name-only
+	diffstagednamestat = diff --cached --name-only --stat
+	diffstagednamestatcached = diff --cached --name-only --stat
