@@ -150,7 +150,6 @@ install() {
   install_lazydocker
   install_ohmyzsh
   install_zsh_plugins
-  install_nerdfont
 
   if [ "$INSTALL_NEOVIM" = true ]; then
     install_neovim
