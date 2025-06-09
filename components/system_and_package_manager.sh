@@ -15,10 +15,9 @@ detect_package_manager() {
   elif command -v pkg &> /dev/null; then
     echo "pkg"
   else
-    _info "Homebrew not found. Would you like to install it? (y/n)"
-    read -r response
-    if [[ "$response" =~ ^[Yy]$ ]]; then
-      _process "Installing Homebrew..."
+    # Check if we're on macOS and install Homebrew by default
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+      _process "Installing Homebrew on macOS..."
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" >> "$LOG" 2>&1
       if [ $? -eq 0 ]; then
         _success "Homebrew installed successfully"
@@ -28,7 +27,6 @@ detect_package_manager() {
         return 1
       fi
     else
-      _warning "Homebrew installation declined"
       _warning "No supported package manager found. Please install one and try again"
       return 1
     fi
