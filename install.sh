@@ -145,7 +145,8 @@ install() {
   _intro
 
   download_and_source_scripts
-
+}
+finish_install() {
   package_manager=$(detect_package_manager)
   install_programs
   install_lazygit
@@ -187,3 +188,4 @@ install() {
 }
 
 install
+finish_install
