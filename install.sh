@@ -132,7 +132,7 @@ download_and_source_scripts() {
     for script_name in ${installer_scripts}; do
       _process "  → Downloading and sourcing ${script_name}"
       local raw_script_url="https://raw.githubusercontent.com/fishstix-dronedeploy/dotfiles/master/components/${script_name}"
-      curl -s -o "${temp_dir}/${script_name}" "${raw_script_url}"
+      curl -H "Cache-Control: no-cache" -s -o "${temp_dir}/${script_name}" "${raw_script_url}"
       source "${temp_dir}/${script_name}"
     done
 
