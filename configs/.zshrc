@@ -89,6 +89,8 @@ alias g='git'                    # git is too long
 alias gsu='git submodule update --remote --merge'
 alias gcp='git cherry-pick'
 alias gr='git revert'
+alias gpc='git push origin "$(git symbolic-ref --short HEAD)"'
+
 
 function mkpr() {
   # Check if gh command exists
