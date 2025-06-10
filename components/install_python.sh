@@ -19,12 +19,6 @@ install_python() {
     return 1
   fi
 
-  # Check if python3 is available
-  if ! command -v python3 > /dev/null; then
-    _warning "Python3 is not installed. Please install Python3 first."
-    return 1
-  fi
-
   # Check if pip3 is available
   if ! command -v pip3 > /dev/null; then
     _process "  → Installing pip3"
