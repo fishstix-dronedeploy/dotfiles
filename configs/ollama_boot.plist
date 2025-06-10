@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.dronedeploy.ollama</string>  <!-- Unique label for your Launch Agent -->
+    <key>UserName</key>
+    <string>scottfisher</string>  <!-- Your macOS username -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/ollama</string>  <!-- Path to ollama executable -->
+        <string>serve</string>  <!-- Command to start ollama server -->
+    </array>
+    <key>RunAtLoad</key>
+    <true/>  <!-- Run at load (boot up) -->
+</dict>
+</plist>
