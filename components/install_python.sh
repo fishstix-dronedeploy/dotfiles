@@ -10,6 +10,7 @@ install_python() {
   pyenv global $PYTHON_VERSION >> "$LOG" 2>&1
 
   # Verify installation
+  _process "  → Verifying Python $PYTHON_VERSION installation: $(python3 --version)"
   if python3 --version | grep -q "Python $PYTHON_VERSION"; then
     _success "Python $PYTHON_VERSION installed and set as global version"
   else
