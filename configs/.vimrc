@@ -59,9 +59,9 @@ let g:airline#extensions#clock#format = '%H:%M:%S'
 let g:airline#extensions#clock#updatetime = 1000
 let g:workspace_autocreate = 1
 let g:workspace_autosave_always = 1
-let g:NERDTreeFileExtensionHighlightFullName = 1
-let g:NERDTreeExactMatchHighlightFullName = 1
-let g:NERDTreePatternMatchHighlightFullName = 1
+"let g:NERDTreeFileExtensionHighlightFullName = 1
+"let g:NERDTreeExactMatchHighlightFullName = 1
+"let g:NERDTreePatternMatchHighlightFullName = 1
 
 
 " -------- CoC config --------
