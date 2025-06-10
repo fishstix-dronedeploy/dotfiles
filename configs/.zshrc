@@ -200,6 +200,7 @@ export PATH=$PATH:/home/scottfisher/.spicetify
 export MANPAGER="vim -M +MANPAGER - "
 
 export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 eval "$(pyenv init -)"
 #eval "$(pyenv virtualenv-init -)"
 
