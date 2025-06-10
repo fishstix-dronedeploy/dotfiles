@@ -158,7 +158,8 @@ finish_install() {
     _process "Skipping Neovim Installation: $INSTALL_NEOVIM"
     #install_neovim
   fi
-  install_nvchad
+  _process "Skipping NvChad Installation"
+  #install_nvchad
 
   install_colorls
   if [ "$INSTALL_NODE" = true ]; then
