@@ -4,6 +4,7 @@ configs/.tmux.conf .tmux.conf
 configs/.skhdrc .skhdrc
 configs/.yabairc .yabairc
 configs/.gitconfig .gitconfig
+configs/.vimrc .vimrc
 configs/aichat_config.yaml Library/Application\ Support/aichat/config.yaml
 configs/ollama_boot.plist Library/LaunchAgents/ollama_boot.plist
 configs/skhd_boot.plist Library/LaunchAgents/com.koekeishiya.skhd.plist
