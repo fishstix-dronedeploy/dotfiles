@@ -161,7 +161,7 @@ finish_install() {
   _process "Skipping NvChad Installation"
   #install_nvchad
 
-  install_colorls
+  #install_colorls
   if [ "$INSTALL_NODE" = true ]; then
     install_node
   fi
