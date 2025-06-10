@@ -182,6 +182,7 @@ finish_install() {
   #install_crontab
   setup_git_authorship
   generate_ssh_key
+  setup_launchctl
   set_default_shell
 
   _finish
