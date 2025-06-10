@@ -6,15 +6,18 @@ setup_launchctl() {
   # Get list of currently loaded services
   loaded_services=$(launchctl list 2>/dev/null)
 
-  # Define array of services to load
-  declare -A services=(
-    ["com.dronedeploy.ollama"]="ollama_boot.plist"
-    ["com.koekeishiya.skhd"]="com.koekeishiya.skhd.plist"
+  # Define services as "service_name:plist_file" pairs
+  services=(
+    "com.dronedeploy.ollama:ollama_boot.plist"
+    "com.koekeishiya.skhd:com.koekeishiya.skhd.plist"
   )
 
-  # Loop through services and load them if needed
-  for service_name in "${!services[@]}"; do
-    plist_file="${services[$service_name]}"
+  # Loop through services and split each entry
+  for service_entry in "${services[@]}"; do
+    # Split on the colon delimiter
+    service_name="${service_entry%%:*}"
+    plist_file="${service_entry##*:}"
+    
     if ! echo "$loaded_services" | grep -q "$service_name"; then
       _process "  → Loading ${service_name} service"
       if [ -f ~/Library/LaunchAgents/"$plist_file" ]; then
