@@ -4,6 +4,9 @@ install_python() {
   _process "→ Installing Python packages and tools"
 
   # Install Python 3.13.0 (latest version available)
+  # init pyenv if needed
+  eval "$(pyenv init -)"
+
   PYTHON_VERSION="3.13.0"
   _process "  → Installing Python $PYTHON_VERSION via pyenv"
   pyenv install $PYTHON_VERSION >> "$LOG" 2>&1
