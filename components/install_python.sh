@@ -3,8 +3,8 @@
 install_python() {
   _process "→ Installing Python packages and tools"
 
-  # Install Python 3.13.0a4 (latest alpha version available)
-  _process "  → Installing Python 3.13.0a4 via pyenv"
+  # Install Python 3.13.0 (latest version available)
+  _process "  → Installing Python 3.13.0 via pyenv"
   PYTHON_VERSION="3.13.0"
   pyenv install $PYTHON_VERSION >> "$LOG" 2>&1
   pyenv global $PYTHON_VERSION >> "$LOG" 2>&1
