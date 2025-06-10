@@ -31,24 +31,24 @@ nnoremap <leader>v <c-v>
 
 " -------- Plugins --------
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-  " Plugin 'VundleVim/Vundle.vim'
-  " Plugin 'preservim/nerdtree'
-  " Plugin 'xuyuanp/nerdtree-git-plugin'
-  " Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-  " Plugin 'vim-airline/vim-airline'
-  " Plugin 'vim-airline/vim-airline-themes'
-  " Plugin 'enricobacis/vim-airline-clock'
-  " Plugin 'neoclide/coc.nvim'
-  " Plugin 'leafgarland/typescript-vim'
-  " Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  " Plugin 'felipec/notmuch-vim'
-  " Plugin 'tpope/vim-fugitive'
-  " Plugin 'frazrepo/vim-rainbow'
-  " Plugin 'jiangmiao/auto-pairs'
-  " Plugin 'ryanoasis/vim-devicons'
-  " Plugin 'posva/vim-vue'
-call vundle#end()
+" call vundle#begin()
+"   " Plugin 'VundleVim/Vundle.vim'
+"   " Plugin 'preservim/nerdtree'
+"   " Plugin 'xuyuanp/nerdtree-git-plugin'
+"   " Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+"   " Plugin 'vim-airline/vim-airline'
+"   " Plugin 'vim-airline/vim-airline-themes'
+"   " Plugin 'enricobacis/vim-airline-clock'
+"   " Plugin 'neoclide/coc.nvim'
+"   " Plugin 'leafgarland/typescript-vim'
+"   " Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"   " Plugin 'felipec/notmuch-vim'
+"   " Plugin 'tpope/vim-fugitive'
+"   " Plugin 'frazrepo/vim-rainbow'
+"   " Plugin 'jiangmiao/auto-pairs'
+"   " Plugin 'ryanoasis/vim-devicons'
+"   " Plugin 'posva/vim-vue'
+" call vundle#end()
 
 
 " -------- Misc. Plugin config --------
