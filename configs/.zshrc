@@ -198,6 +198,10 @@ export PATH=$PATH:/home/scottfisher/.spicetify
 
 export MANPAGER="vim -M +MANPAGER - "
 
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # DD Functions
 function dd_pipeline_prod() {
   export PIPELINE_KEY=$PIPELINE_KEY_PROD
