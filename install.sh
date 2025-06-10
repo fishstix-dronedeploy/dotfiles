@@ -155,7 +155,7 @@ finish_install() {
   install_zsh_plugins
 
   if [ "$INSTALL_NEOVIM" = true ]; then
-    _process "Skipping Neovim Installation"
+    _process "Skipping Neovim Installation: $INSTALL_NEOVIM"
     #install_neovim
   fi
   install_nvchad
