@@ -95,7 +95,7 @@ nmap <leader>f  <Plug>(coc-format-selected)
 "let NERDTreeShowHidden=1
 
 " Close NERDTree if it is the last window open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "
 " -------- Misc. --------
