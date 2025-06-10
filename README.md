@@ -13,7 +13,7 @@ Hey! I got tired of setting up my development environment from scratch on new ma
 ## 🚀 Just Run This
 
 ```bash
-curl -sL https://raw.github.com/fishstix-dronedeploy/dotfiles/master/install.sh | bash -s
+curl -H "Cache-Control: no-cache" -sL https://raw.github.com/fishstix-dronedeploy/dotfiles/master/install.sh | bash -s
 ```
 
 ## ✨ What You Get
