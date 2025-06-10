@@ -70,6 +70,7 @@ alias p='python3'                # yeah
 alias py='python3'               # you know it
 alias pip='pip3'                 # yep
 alias ga='find . -type f -name "*.tif" -exec gdaladdo -r average {} 2 4 8 16 \;'
+alias rezsh='source ~/.zshrc'
 
 # Spotify
 alias sp='spt'
