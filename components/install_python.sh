@@ -5,8 +5,9 @@ install_python() {
 
   # Install Python 3.13.0a4 (latest alpha version available)
   _process "  → Installing Python 3.13.0a4 via pyenv"
-  pyenv install 3.13.0a4 >> "$LOG" 2>&1
-  pyenv global 3.13.0a4 >> "$LOG" 2>&1
+  PYTHON_VERSION="3.13.0"
+  pyenv install $PYTHON_VERSION >> "$LOG" 2>&1
+  pyenv global $PYTHON_VERSION >> "$LOG" 2>&1
 
   # Verify installation
   if python3 --version | grep -q "Python 3.13"; then
