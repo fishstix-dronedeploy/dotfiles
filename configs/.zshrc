@@ -204,6 +204,9 @@ export PATH="$HOME/.local/bin:$PATH"
 eval "$(pyenv init -)"
 #eval "$(pyenv virtualenv-init -)"
 
+# Google
+export PATH="${HOME}/google-cloud-sdk/bin:$PATH"
+
 # DD Functions
 function dd_pipeline_prod() {
   export PIPELINE_KEY=$PIPELINE_KEY_PROD
