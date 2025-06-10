@@ -15,7 +15,7 @@ install_python() {
   if python3 --version | grep -q "Python $PYTHON_VERSION"; then
     _success "Python $PYTHON_VERSION installed and set as global version"
   else
-    _warning "Failed to install or set Python $PYTHON_VERSION as global version"
+    _warning "Failed to install or set Python $PYTHON_VERSION as shell version"
     return 1
   fi
 
