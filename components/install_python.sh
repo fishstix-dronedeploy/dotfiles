@@ -10,10 +10,10 @@ install_python() {
   pyenv global $PYTHON_VERSION >> "$LOG" 2>&1
 
   # Verify installation
-  if python3 --version | grep -q "Python 3.13"; then
-    _success "Python 3.13 installed and set as global version"
+  if python3 --version | grep -q "Python $PYTHON_VERSION"; then
+    _success "Python $PYTHON_VERSION installed and set as global version"
   else
-    _warning "Failed to install or set Python 3.13 as global version"
+    _warning "Failed to install or set Python $PYTHON_VERSION as global version"
     return 1
   fi
 
