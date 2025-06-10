@@ -200,7 +200,7 @@ export MANPAGER="vim -M +MANPAGER - "
 
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#eval "$(pyenv virtualenv-init -)"
 
 # DD Functions
 function dd_pipeline_prod() {
