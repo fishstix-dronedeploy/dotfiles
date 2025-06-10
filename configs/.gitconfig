@@ -6,6 +6,7 @@
 [alias]
 	# Basic shortcuts
 	st = status
+    stu = status -u
 	co = checkout
 	br = branch
 	ci = commit
