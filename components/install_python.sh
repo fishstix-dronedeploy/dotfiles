@@ -7,6 +7,7 @@ install_python() {
   _process "  → Installing Python 3.13.0 via pyenv"
   PYTHON_VERSION="3.13.0"
   pyenv install $PYTHON_VERSION >> "$LOG" 2>&1
+  exec "$SHELL"
   pyenv global $PYTHON_VERSION >> "$LOG" 2>&1
 
   # Verify installation
