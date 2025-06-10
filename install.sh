@@ -169,6 +169,7 @@ finish_install() {
   install_go
   #install_gotop
   install_python
+  install_gsutil
 
   install_fonts
   install_powerlevel10k
