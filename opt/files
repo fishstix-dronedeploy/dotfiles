@@ -5,7 +5,7 @@ configs/.skhdrc .skhdrc
 configs/.yabairc .yabairc
 configs/.gitconfig .gitconfig
 configs/aichat_config.yaml Library/Application\ Support/aichat/config.yaml
-configs/ollama_boot.xml Library/LaunchAgents/ollama_boot.xml
+configs/ollama_boot.plist Library/LaunchAgents/ollama_boot.plist
 configs/nvchad/chadrc.lua .config/nvim/lua/custom/chadrc.lua
 configs/nvchad/mappings.lua .config/nvim/lua/custom/mappings.lua
 configs/nvchad/misc.lua .config/nvim/lua/custom/misc.lua
