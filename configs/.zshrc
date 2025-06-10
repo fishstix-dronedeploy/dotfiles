@@ -206,6 +206,11 @@ eval "$(pyenv init -)"
 
 # Google
 export PATH="${HOME}/google-cloud-sdk/bin:$PATH"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/scottfisher/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/scottfisher/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/scottfisher/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/scottfisher/google-cloud-sdk/completion.zsh.inc'; fi
 
 # DD Functions
 function dd_pipeline_prod() {
