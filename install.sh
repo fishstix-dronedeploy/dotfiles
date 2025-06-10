@@ -167,7 +167,7 @@ finish_install() {
   fi
   install_ruby
   install_go
-  install_gotop
+  #install_gotop
   install_python
 
   install_fonts
