@@ -68,6 +68,7 @@ install_python() {
     "setuptools wheel"
     "virtualenv"
     "poetry"
+    "uv"
   )
 
   # Install each package
