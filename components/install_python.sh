@@ -3,6 +3,19 @@
 install_python() {
   _process "→ Installing Python packages and tools"
 
+  # Install Python 3.13.0a4 (latest alpha version available)
+  _process "  → Installing Python 3.13.0a4 via pyenv"
+  pyenv install 3.13.0a4 >> "$LOG" 2>&1
+  pyenv global 3.13.0a4 >> "$LOG" 2>&1
+
+  # Verify installation
+  if python3 --version | grep -q "Python 3.13"; then
+    _success "Python 3.13 installed and set as global version"
+  else
+    _warning "Failed to install or set Python 3.13 as global version"
+    return 1
+  fi
+
   # Check if python3 is available
   if ! command -v python3 > /dev/null; then
     _warning "Python3 is not installed. Please install Python3 first."
