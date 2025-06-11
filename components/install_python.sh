@@ -69,6 +69,7 @@ install_python() {
     "virtualenv"
     "poetry"
     "uv"
+    "certifi"
   )
 
   # Install each package
