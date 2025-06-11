@@ -10,6 +10,7 @@ setup_launchctl() {
   services=(
     "com.dronedeploy.ollama:ollama_boot.plist"
     "com.koekeishiya.skhd:com.koekeishiya.skhd.plist"
+    "com.koekeishiya.yabai:com.koekeishiya.yabai.plist"
   )
 
   # Loop through services and split each entry
