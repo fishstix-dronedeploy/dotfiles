@@ -9,6 +9,7 @@ cmd + shift - s : open -a "Slack"
 cmd + shift - v : open -a "Cursor"
 cmd + shift - x : open -a "Xcode"
 cmd + shift - c : open -a "Google Chrome"
+cmd + shift - t : open -a "Terminal"
 
 # moves focus between windows in the current focused display
 alt - h : yabai -m window --focus west
