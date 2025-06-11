@@ -110,6 +110,7 @@ install_programs() {
           exit 1
         fi
       done
+      brew cask install docker
       ;;
     pkg)
       _process "Installing dependencies using pkg package manager"
