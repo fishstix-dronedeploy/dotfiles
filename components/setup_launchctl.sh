@@ -32,7 +32,7 @@ setup_launchctl() {
         _warning "${plist_file} not found in ~/Library/LaunchAgents/"
       fi
     else
-      _info "${service_name} service is already loaded"
+      _info "${service_name} service is already loaded, reloading"
       launchctl unload ~/Library/LaunchAgents/"$plist_file" >> "$LOG" 2>&1
       launchctl load ~/Library/LaunchAgents/"$plist_file" >> "$LOG" 2>&1
     fi
