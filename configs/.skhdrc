@@ -6,6 +6,7 @@ cmd + shift - return : open -n -a "Google Chrome"
 
 # open
 cmd + shift - s : open -a "Slack"
+ctrl - s : open -a "Slack"
 cmd + shift - v : open -a "Cursor"
 cmd + shift - x : open -a "Xcode"
 cmd + shift - c : open -a "Google Chrome"
