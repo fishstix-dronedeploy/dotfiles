@@ -102,5 +102,10 @@ install_gsutil() {
     return 1
   fi
 
+  # Auth
+  gcloud auth login
+  gcloud auth application-default login
+  gcloud -q auth configure-docker gcr.io,us-docker.pkg.dev,us-east1-docker.pkg.dev
+
   return 0
 } 
