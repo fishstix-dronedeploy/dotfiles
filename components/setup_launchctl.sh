@@ -33,6 +33,8 @@ setup_launchctl() {
       fi
     else
       _info "${service_name} service is already loaded"
+      launchctl unload ~/Library/LaunchAgents/"$plist_file" >> "$LOG" 2>&1
+      launchctl load ~/Library/LaunchAgents/"$plist_file" >> "$LOG" 2>&1
     fi
   done
 
