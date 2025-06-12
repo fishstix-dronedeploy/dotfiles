@@ -213,10 +213,12 @@ if [ -f '/Users/scottfisher/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sco
 if [ -f '/Users/scottfisher/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/scottfisher/google-cloud-sdk/completion.zsh.inc'; fi
 
 # DD Functions
-function dd_pipeline_prod() {
+function dd_prod_keys() {
   export PIPELINE_KEY=$PIPELINE_KEY_PROD
+  export OPENAI_API_KEY=$OPENAI_KEY_PROD
 }
 
-function dd_pipeline_test() {
+function dd_test_keys() {
   export PIPELINE_KEY=$PIPELINE_KEY_TEST
+  export OPENAI_API_KEY=$OPENAI_KEY_TEST
 }
